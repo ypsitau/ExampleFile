@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".MainActivity">
+
+	<Button
+		android:id="@+id/button_createFiles"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:text="Create Files"
+		android:textAllCaps="false"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintBottom_toTopOf="@+id/button_listFiles"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintRight_toRightOf="parent" />
+
+	<Button
+		android:id="@+id/button_listFiles"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:text="List Files"
+		android:textAllCaps="false"
+		app:layout_constraintTop_toBottomOf="@+id/button_createFiles"
+		app:layout_constraintBottom_toTopOf="@+id/editText_log"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintRight_toRightOf="parent" />
+
+	<EditText
+		android:id="@+id/editText_log"
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		android:background="#eeeeee"
+		android:gravity="top"
+		android:textSize="12sp"
+		app:layout_constraintTop_toBottomOf="@+id/button_listFiles"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintRight_toRightOf="parent"
+		/>
+</android.support.constraint.ConstraintLayout>
