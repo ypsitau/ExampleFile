@@ -18,6 +18,8 @@ import java.io.OutputStream;
 // $ adb shell
 // android$ run-as io.github.ypsitau.examplefile
 // android$ ls -al files
+// android$ ls -al cache
+// android$ ls -al app_original
 public class MainActivity extends AppCompatActivity {
 
 	Button button_createFiles;
